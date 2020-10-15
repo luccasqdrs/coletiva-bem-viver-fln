@@ -8,8 +8,8 @@ interface ButtonProps {
 }
 
 const ButtonRoot = styled.div`
-  width: 300px;
-  padding-top: auto;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Button: React.FunctionComponent<ButtonProps> = ({ which }) => {

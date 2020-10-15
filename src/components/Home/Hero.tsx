@@ -3,11 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-const HeroRoot = styled.div`
-  position: relative;
-  top: -70px;
-  left: 0;
-`;
+const HeroRoot = styled.div``;
 
 export const Hero: React.FC = () => {
   const data = useStaticQuery(graphql`

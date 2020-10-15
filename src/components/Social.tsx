@@ -5,24 +5,19 @@ import ImportInstagram from '@/assets/svg/instagram.svg';
 import ImportTwitter from '@/assets/svg/twitter.svg';
 import ImportYT from '@/assets/svg/youtube.svg';
 
-
 const SocialRoot = styled.div`
   display: flex;
-  padding: 10px;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
+  margin: 5px 5px;
+  grid-row: 1/3;
+  grid-column: 3;
+  z-index: 2;
+  justify-content: right;
 `;
 const ButtonContainer = styled.div`
-  display: block;
-  position: relative;
-  width: 100%;
+  margin: 0px 1%;
   svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 `;
 

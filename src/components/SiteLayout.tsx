@@ -12,6 +12,7 @@ const Layout = styled.div`
   display: block;
 
   min-height: 100vh;
+  margin-top: -2em;
 `;
 
 export default ({ children }: AppLayoutProps) => (

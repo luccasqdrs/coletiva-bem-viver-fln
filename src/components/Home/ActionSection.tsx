@@ -7,12 +7,11 @@ import { Button } from '../Button';
 const ActionRoot = styled.div`
   display: flex;
   background-color: #e8ddce;
-  height: 300px;
-  width: 100%;
-  position: relative;
-  top: -70px;
-  align-items: center;
   justify-content: space-around;
+  a {
+    margin: 3%;
+    width: 100%;
+  }
 `;
 
 export const Action: React.FC = () => (

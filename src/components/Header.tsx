@@ -7,17 +7,17 @@ import { Social } from './Social';
 
 const HeaderRoot = styled.div`
   display: grid;
-  grid-template-columns: 1fr 500px 1fr;
-  grid-template-rows: 60px 60px;
-`;
-
-const Menu = styled.div`
-  display: flex;
+  grid-template-columns: 1fr 100px 1fr;
+  grid-template-rows: repeat(3, 20px);
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: repeat(3, 30px);
+  }
 `;
 
 const LogoContainer = styled.div`
   grid-column: 2;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   justify-self: center;
   align-self: center;
   display: block;
@@ -26,16 +26,9 @@ const LogoContainer = styled.div`
   height: 90%;
   z-index: 2;
 `;
-const SocialContainer = styled.div`
-  width: 220px;
-  grid-row: 1;
-  grid-column: 3;
-  justify-self: center;
-  z-index: 2;
-`;
 const WaveContainer = styled.div`
   grid-column: 1 / 4;
-  grid-row: 2;
+  grid-row: 3;
   display: block;
   position: relative;
   width: 100%;
@@ -61,29 +54,24 @@ const Wave = styled(ImportWave)`
   top: 0;
   width: 100%;
   height: 100%;
+  min-height: 100%;
 `;
 
 const Background = styled.div`
   grid-column: 1 /4;
-  grid-row: 1;
-  background-color: ${variables.colors.header};
-  z-index: 0;
+  grid-row: 1/ 3;
+  background: ${variables.colors.header};
+  color: ${variables.colors.header};
+  z-index: 2;
 `;
 
 export const Header: React.FC = () => (
   <HeaderRoot>
-    <Background />
-    <Menu>
-      <div>Início</div>
-      <div>Sobre</div>
-      <div>Participar</div>
-    </Menu>
+    <Background>&nbsp;</Background>
     <LogoContainer>
       <Logo />
     </LogoContainer>
-    <SocialContainer>
       <Social />
-    </SocialContainer>
     <WaveContainer>
       <Wave />
     </WaveContainer>

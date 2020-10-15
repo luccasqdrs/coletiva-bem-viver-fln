@@ -17,8 +17,8 @@ const Layout = styled.div`
 export default ({ children }: AppLayoutProps) => (
   <>
     <Styles />
-    <Header>Hello World!</Header>
+    <Header />
     <Layout>{children}</Layout>
-    <Footer>Footer!</Footer>
+    {/* <Footer /> */}
   </>
 );

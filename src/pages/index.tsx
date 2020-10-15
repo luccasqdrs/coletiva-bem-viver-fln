@@ -11,7 +11,7 @@ const Home: React.FC<PageProps> = () => (
     <main>
       <Hero />
       <Action />
-      <Theme />
+      {/* <Theme /> */}
     </main>
   </SiteLayout>
 );

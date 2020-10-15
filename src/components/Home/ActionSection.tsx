@@ -1,4 +1,5 @@
 import { variables } from '@/styles/variables';
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '../Button';
@@ -16,8 +17,14 @@ const ActionRoot = styled.div`
 
 export const Action: React.FC = () => (
   <ActionRoot>
-    <Button which="sobre" />
-    <Button which="participar" />
-    <Button which="doar" />
+    <Link to="/sobre">
+      <Button which="sobre" />
+    </Link>
+    <Link to="/participar">
+      <Button which="participar" />
+    </Link>
+    <Link to="/doar">
+      <Button which="doar" />
+    </Link>
   </ActionRoot>
 );

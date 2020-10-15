@@ -23,7 +23,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({ which }) => {
         }
       }
 
-      doar: file(relativePath: { eq: "participar.png" }) {
+      doar: file(relativePath: { eq: "doar.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -31,7 +31,7 @@ export const Button: React.FunctionComponent<ButtonProps> = ({ which }) => {
         }
       }
 
-      participar: file(relativePath: { eq: "doar.png" }) {
+      participar: file(relativePath: { eq: "participar.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid

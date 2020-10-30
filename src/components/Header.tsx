@@ -23,7 +23,7 @@ const LogoContainer = styled.div`
   display: block;
   position: relative;
   width: 100%;
-  height: 90%;
+  height: 80%;
   z-index: 2;
 `;
 const WaveContainer = styled.div`

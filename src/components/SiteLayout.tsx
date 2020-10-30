@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { Styles } from '@/styles/base';
+import { Helmet } from 'react-helmet';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
@@ -17,9 +18,15 @@ const Layout = styled.div`
 
 export default ({ children }: AppLayoutProps) => (
   <>
+    <Helmet>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
     <Styles />
     <Header />
     <Layout>{children}</Layout>
-    {/* <Footer /> */}
+    <Footer />
   </>
 );

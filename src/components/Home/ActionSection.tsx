@@ -6,7 +6,7 @@ import { Button } from '../Button';
 
 const ActionRoot = styled.div`
   display: flex;
-  background-color: #e8ddce;
+  background-color: ${variables.colors.background};
   justify-content: space-around;
   a {
     margin: 3%;

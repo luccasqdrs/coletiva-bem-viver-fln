@@ -1,7 +1,17 @@
-
 module.exports = {
-  // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
-  // don't need to define it here (just if you need to change the options)
+  siteMetadata: {
+    title: 'Coletiva Bem Viver Floripa',
+    titleTemplate: 'Coletiva Bem Viver Floripa | %s',
+    description: `Somos uma candidatura coletiva e feminista que ocupará uma cadeira de vereadora em Florianópolis.
+      Pela construção do Poder Popular! ✊🐜
+      CNPJ: 38.506.600/0001-07
+      Na urna somos 50.048 💚
+      `,
+    url: 'https://coletivabemviverfloripa.org', // No trailing slash allowed!
+    // image: '/images/snape.jpg', // Path to your image you placed in the 'static' folder
+    // twitterUsername: '@occlumency',
+    author: 'Coletiva Bem Viver Floripa 50048',
+  },
   plugins: [
     'gatsby-plugin-styled-components',
     {
@@ -21,5 +31,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    'gatsby-plugin-react-helmet',
   ],
 };

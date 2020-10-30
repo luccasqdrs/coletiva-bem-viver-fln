@@ -17,6 +17,9 @@ export const Styles = createGlobalStyle`
     min-height: 100vh;
 
     background-color: ${variables.colors.background};
+    font-size: 8px;
+    @media (min-width: 700px) {
+      font-size: 16px;
   }
 
   html {
@@ -44,6 +47,23 @@ export const Styles = createGlobalStyle`
     margin: 0;
     /* iOS on orientation change */
     text-size-adjust: 100%;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  p {
+    font-family: 'Futura', sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+    margin-bottom: 1.5em;
+  }
+  b {
+    font-weight: bold;
   }
 
 `;
